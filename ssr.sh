@@ -200,7 +200,7 @@ GET_SERVER_IP(){
 
 Install_Aria2(){
 	if [ ! -f /root/aria2.sh ];then
-		wget -N --no-check-certificate "https://softsmirror.cf/Bash/aria2.sh"
+		wget -N --no-check-certificate "https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/aria2.sh"
 		chmod +x aria2.sh
 	fi
 	
@@ -209,7 +209,7 @@ Install_Aria2(){
 
 Install_Server_Status(){
 	if [ ! -f /root/status.sh ];then
-		wget "https://softs.fun/Bash/status.sh"
+		wget "https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/status.sh"
 		chmod 777 status.sh
 	fi
 	
