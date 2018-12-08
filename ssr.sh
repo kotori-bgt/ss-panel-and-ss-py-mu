@@ -200,7 +200,7 @@ GET_SERVER_IP(){
 
 Install_Aria2(){
 	if [ ! -f /root/aria2.sh ];then
-		wget -N --no-check-certificate "https://softs.fun/Bash/aria2.sh"
+		wget -N --no-check-certificate "https://softsmirror.cf/Bash/aria2.sh"
 		chmod +x aria2.sh
 	fi
 	
@@ -234,7 +234,7 @@ Install_Socks5(){
 
 INSTALL(){
 	if [ ! -f /usr/bin/ssr ];then
-		wget -O /root/ssr_file.zip "https://github.com/qinghuas/ss-panel-and-ss-py-mu/archive/master.zip"
+		wget -O /root/ssr_file.zip "https://github.com/kotori-bgt/ss-panel-and-ss-py-mu/archive/master.zip"
 		unzip /root/ssr_file.zip -d /root;mv /root/ss-panel-and-ss-py-mu-master/* /root
 		cp /root/ssr.sh /usr/bin/ssr;chmod 777 /usr/bin/ssr
 		rm -rf ssr_file.zip /root/ss-panel-and-ss-py-mu-master /root/picture /root/README.md /root/ssr.sh
