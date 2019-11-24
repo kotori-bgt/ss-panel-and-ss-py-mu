@@ -131,9 +131,9 @@ install_elrepo() {
     rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 
     if centosversion 6; then
-        rpm -Uvh http://www.elrepo.org/elrepo-release-6-8.el6.elrepo.noarch.rpm
+        yum install -y elrepo-release
     elif centosversion 7; then
-        rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+        yum install -y elrepo-release
     fi
 
     if [ ! -f /etc/yum.repos.d/elrepo.repo ]; then
