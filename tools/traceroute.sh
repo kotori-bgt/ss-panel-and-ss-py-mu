@@ -59,7 +59,7 @@ Install_Nali(){
 Install_BestTrace(){
 	echo "检查到您未安装,将先进行安装...";sleep 2
 	yum -y install git gcc make wget curl traceroute
-	wget "https://github.com/kotori-bgt/soft/releases/download/v1.0/besttrace.tar.gz"
+	wget "https://github.com/kotori-bgt/soft/raw/master/besttrace.tar.gz"
 	tar -xzf besttrace.tar.gz;cd besttrace;chmod +x *;clear;besttrace_test
 }
 
@@ -75,7 +75,7 @@ Install_All(){
 	cd nali-ipip;./configure;make;make install;cd /root
 	#besttrace
 	yum -y install git gcc make wget curl traceroute
-	wget "https://github.com/kotori-bgt/soft/releases/download/v1.0/besttrace.tar.gz"
+	wget "https://github.com/kotori-bgt/soft/raw/master/besttrace.tar.gz"
 	tar -xzf besttrace.tar.gz;cd besttrace;chmod +x *;cd /root
 	#mtr
 	yum -y install mtr
